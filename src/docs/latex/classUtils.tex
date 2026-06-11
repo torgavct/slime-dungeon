@@ -1,0 +1,76 @@
+\doxysection{Utils Class Reference}
+\hypertarget{classUtils}{}\label{classUtils}\index{Utils@{Utils}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static sf\+::\+Vector2f \mbox{\hyperlink{classUtils_aec29706b52a2b4ed24846f0137a3862f}{Get\+Normalized\+Direction}} (sf\+::\+Vector2f pos\+\_\+a, sf\+::\+Vector2f pos\+\_\+b)
+\begin{DoxyCompactList}\small\item\em returns a normalized vector pointing to the direction from pos\+\_\+a to pos\+\_\+b \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{classUtils_afde71262939ea9dd513a94000aa32b9c}{Get\+Distance}} (sf\+::\+Vector2f pos\+\_\+a, sf\+::\+Vector2f pos\+\_\+b)
+\begin{DoxyCompactList}\small\item\em returns the distance between two points \end{DoxyCompactList}\item 
+\Hypertarget{classUtils_a3aaf629a0eaedb63bc3bb78f0ca281b7}\label{classUtils_a3aaf629a0eaedb63bc3bb78f0ca281b7} 
+static float {\bfseries Get\+Delta\+Time} ()
+\begin{DoxyCompactList}\small\item\em returns the time since the last frame \end{DoxyCompactList}\item 
+static sf\+::\+Vector2f \mbox{\hyperlink{classUtils_a2781267d552473d0c6da3a2861f8c7fb}{Vector\+Lerp}} (sf\+::\+Vector2f start, sf\+::\+Vector2f end, float duration)
+\begin{DoxyCompactList}\small\item\em lerps between two sf\+::\+Vector2f \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classUtils_afde71262939ea9dd513a94000aa32b9c}\label{classUtils_afde71262939ea9dd513a94000aa32b9c} 
+\index{Utils@{Utils}!GetDistance@{GetDistance}}
+\index{GetDistance@{GetDistance}!Utils@{Utils}}
+\doxysubsubsection{\texorpdfstring{GetDistance()}{GetDistance()}}
+{\footnotesize\ttfamily float Utils\+::\+Get\+Distance (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{pos\+\_\+a,  }\item[{sf\+::\+Vector2f}]{pos\+\_\+b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+returns the distance between two points 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos\+\_\+a} & -\/ the first point \\
+\hline
+{\em pos\+\_\+b} & -\/ the second point \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classUtils_aec29706b52a2b4ed24846f0137a3862f}\label{classUtils_aec29706b52a2b4ed24846f0137a3862f} 
+\index{Utils@{Utils}!GetNormalizedDirection@{GetNormalizedDirection}}
+\index{GetNormalizedDirection@{GetNormalizedDirection}!Utils@{Utils}}
+\doxysubsubsection{\texorpdfstring{GetNormalizedDirection()}{GetNormalizedDirection()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Utils\+::\+Get\+Normalized\+Direction (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{pos\+\_\+a,  }\item[{sf\+::\+Vector2f}]{pos\+\_\+b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+returns a normalized vector pointing to the direction from pos\+\_\+a to pos\+\_\+b 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos\+\_\+a} & -\/ the startpoint \\
+\hline
+{\em pos\+\_\+b} & -\/ the endpoint \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classUtils_a2781267d552473d0c6da3a2861f8c7fb}\label{classUtils_a2781267d552473d0c6da3a2861f8c7fb} 
+\index{Utils@{Utils}!VectorLerp@{VectorLerp}}
+\index{VectorLerp@{VectorLerp}!Utils@{Utils}}
+\doxysubsubsection{\texorpdfstring{VectorLerp()}{VectorLerp()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Utils\+::\+Vector\+Lerp (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{start,  }\item[{sf\+::\+Vector2f}]{end,  }\item[{float}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+lerps between two sf\+::\+Vector2f 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & -\/ the startpoint \\
+\hline
+{\em end} & -\/ the endpoint \\
+\hline
+{\em duration} & -\/ the duration for the lerp \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Utils.\+h\item 
+Utils.\+cc\end{DoxyCompactItemize}

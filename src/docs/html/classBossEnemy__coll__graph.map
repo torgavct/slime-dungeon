@@ -1,0 +1,14 @@
+<map id="BossEnemy" name="BossEnemy">
+<area shape="rect" id="Node000001" title=" " alt="" coords="83,317,182,343"/>
+<area shape="rect" id="Node000002" href="$classEntity.html" title=" " alt="" coords="103,243,163,268"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,282,135,317,130,317,130,282"/>
+<area shape="rect" id="Node000003" href="$classObject.html" title=" " alt="" coords="95,80,159,105"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="131,119,135,243,130,243,126,119"/>
+<area shape="rect" id="Node000006" href="$classWeapon.html" title=" " alt="" coords="149,155,223,180"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="148,115,179,153,174,156,144,118"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,5,108,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="80,39,118,78,114,82,76,43"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="132,5,267,31"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="180,43,141,82,137,78,176,39"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="174,193,142,244,138,241,169,191"/>
+</map>

@@ -1,0 +1,3 @@
+/home/torgav/Personal/dungeonGame/build/CMakeFiles/sfml.dir
+/home/torgav/Personal/dungeonGame/build/CMakeFiles/edit_cache.dir
+/home/torgav/Personal/dungeonGame/build/CMakeFiles/rebuild_cache.dir

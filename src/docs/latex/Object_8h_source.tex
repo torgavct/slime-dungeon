@@ -1,0 +1,38 @@
+\doxysection{Object.\+h}
+\hypertarget{Object_8h_source}{}\label{Object_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/Drawable.hpp>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/Transformable.hpp>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <SFML/System/Vector2.hpp>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/Sprite.hpp>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/RenderStates.hpp>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/RenderTarget.hpp>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classObject}{Object}}\ :\ \textcolor{keyword}{public}\ sf::Drawable,\ \textcolor{keyword}{public}\ sf::Transformable\ }
+\DoxyCodeLine{00010\ \{}
+\DoxyCodeLine{00011\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{classObject}{Object}}(sf::Vector2f\ \mbox{\hyperlink{classObject_aec00daf54d15f689af2eea0be28dbf86}{pos}},\ sf::Sprite\ \mbox{\hyperlink{classObject_a65be09abc56e93e0154c3a0e37f97579}{sprite}});}
+\DoxyCodeLine{00013\ \ \ \ }
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classObject}{\string~Object}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00015\ \ \ \ \ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classObject_ad8381425a173f8ebd76972da01454f2a}{collide}}(\mbox{\hyperlink{classObject}{Object}}*\ other)\ =\ 0;}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00021\ \ \ \ \ sf::Sprite\&\ \mbox{\hyperlink{classObject_a8aaea14ccc56e69a949b9fc0f617e83d}{get\_sprite}}();}
+\DoxyCodeLine{00023\ \ \ \ \ sf::Vector2f\ \mbox{\hyperlink{classObject_a68ee4e01b53da4bfc87a31b1a2862c6b}{get\_pos}}();}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classObject_a1c26bb04b5a39f4f295b9642de07b7c8}{moveToPos}}(sf::Vector2f\ newPos);}
+\DoxyCodeLine{00026\ \ \ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classObject_ac17f131336637b930403053539884391}{get\_id}}();}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00031\ \ \ sf::FloatRect\ \mbox{\hyperlink{classObject_a01b9af30803cc1121b03bc3b5c1a1599}{GetGlobalBounds}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classObject_a65be09abc56e93e0154c3a0e37f97579}{sprite}}.getGlobalBounds();\}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classObject_aa7caf12457afb8b79152cfaf0158c827}{id}};\ }
+\DoxyCodeLine{00036\ \ \ \ \ sf::Vector2f\ \mbox{\hyperlink{classObject_aec00daf54d15f689af2eea0be28dbf86}{pos}};}
+\DoxyCodeLine{00037\ \ \ \ \ sf::Sprite\ \mbox{\hyperlink{classObject_a65be09abc56e93e0154c3a0e37f97579}{sprite}};}
+\DoxyCodeLine{00038\ \ \ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classObject_a6c3dc18899c7d428b35b88b1474778d0}{draw}}(sf::RenderTarget\&\ target,\ sf::RenderStates\ states)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00041\ \};}
+
+\end{DoxyCode}

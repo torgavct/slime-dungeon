@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['get_5fhp_0',['get_hp',['../classEntity.html#aa88d74c59bcc49cae54f47a1fae9d807',1,'Entity']]],
+  ['get_5fid_1',['get_id',['../classObject.html#ac17f131336637b930403053539884391',1,'Object']]],
+  ['get_5fpos_2',['get_pos',['../classObject.html#a68ee4e01b53da4bfc87a31b1a2862c6b',1,'Object']]],
+  ['get_5fprojectiles_3',['get_projectiles',['../classEntity.html#afffba731382c03503d86678eb6803013',1,'Entity']]],
+  ['get_5fsprite_4',['get_sprite',['../classObject.html#a8aaea14ccc56e69a949b9fc0f617e83d',1,'Object']]],
+  ['getdeltatime_5',['GetDeltaTime',['../classUtils.html#a3aaf629a0eaedb63bc3bb78f0ca281b7',1,'Utils']]],
+  ['getdistance_6',['GetDistance',['../classUtils.html#afde71262939ea9dd513a94000aa32b9c',1,'Utils']]],
+  ['getdoors_7',['getDoors',['../classRoom.html#a93441bfa4e2b68981e58cf71b545bca3',1,'Room']]],
+  ['getglobalbounds_8',['GetGlobalBounds',['../classObject.html#a01b9af30803cc1121b03bc3b5c1a1599',1,'Object']]],
+  ['getid_9',['getID',['../classRoom.html#ae9f6536b2640aa477c03bdffc8fb0511',1,'Room']]],
+  ['getnormalizeddirection_10',['GetNormalizedDirection',['../classUtils.html#aec29706b52a2b4ed24846f0137a3862f',1,'Utils']]],
+  ['getobjects_11',['getObjects',['../classRoom.html#a4999169906e3be815b606d1a1a0d92af',1,'Room']]],
+  ['getplayerspawnpos_12',['getPlayerSpawnPos',['../classDoor.html#a608acb31b4f85c5803bd0013717a4ac4',1,'Door']]],
+  ['gettoid_13',['getToID',['../classDoor.html#aadafddabf6a0502519a2dbec4c4d18b6',1,'Door']]],
+  ['goto_14',['GoTo',['../classLevel.html#a745ae81661f4c51a767d341870f50fa3',1,'Level']]],
+  ['goto_5fold_5fpos_15',['goto_old_pos',['../classEntity.html#a27393e0ec0291637bde9f5ad5f94f44f',1,'Entity']]]
+];

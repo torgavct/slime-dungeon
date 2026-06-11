@@ -1,0 +1,29 @@
+\doxysection{Weapon.\+h}
+\hypertarget{Weapon_8h_source}{}\label{Weapon_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}Object.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <SFML/System/Vector2.hpp>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <SFML/System/Clock.hpp>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classProjectile}{Projectile}};}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classWeapon}{Weapon}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classObject}{Object}}}
+\DoxyCodeLine{00009\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{classWeapon_a42dbc46dd70319a24763992c4ebbd396}{Weapon}}();}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classWeapon}{Weapon}}*\ \mbox{\hyperlink{classWeapon_ab8e86a9249f56b14921c0455f5233c6f}{CreateNewFromType}}(\textcolor{keywordtype}{int}\ type);}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{classWeapon_a42dbc46dd70319a24763992c4ebbd396}{Weapon}}(sf::Vector2f\ \mbox{\hyperlink{classObject_aec00daf54d15f689af2eea0be28dbf86}{pos}},\ sf::Sprite\ \mbox{\hyperlink{classObject_a65be09abc56e93e0154c3a0e37f97579}{sprite}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classWeapon_aeba4a8c1b0632bdeeb8420871a2c2c97}{frequency}},\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classWeapon_a8277e4e3bad83900641a2b20fae98456}{speed}},\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classWeapon_abf6c3e9f9ac4571aa305a40a798d2dcf}{isEnemyGun}});}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classWeapon_af5c824842bbc47aa9f45f33010993d24}{collide}}(\mbox{\hyperlink{classObject}{Object}}*\ other);}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classProjectile}{Projectile}}*\ \mbox{\hyperlink{classWeapon_adbdfe08de882d48bc70cced2cdeaebc3}{use}}(sf::Vector2f\ \mbox{\hyperlink{classObject_aec00daf54d15f689af2eea0be28dbf86}{pos}},\ \textcolor{keywordtype}{float}\ angle);}
+\DoxyCodeLine{00024\ \ \ \ \ sf::Clock\ \mbox{\hyperlink{classWeapon_a018784e717e19cd96c79c880bc8f989e}{clock}};\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classWeapon_a4ad027ee764b4568607f8081f56eaf8d}{isPickedUp}};\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classWeapon_abf6c3e9f9ac4571aa305a40a798d2dcf}{isEnemyGun}};\ }
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classWeapon_aeba4a8c1b0632bdeeb8420871a2c2c97}{frequency}};\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classWeapon_a8277e4e3bad83900641a2b20fae98456}{speed}};\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00032\ \};}
+
+\end{DoxyCode}

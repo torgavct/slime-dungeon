@@ -1,0 +1,26 @@
+\doxysection{Utils.\+h}
+\hypertarget{Utils_8h_source}{}\label{Utils_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ <SFML/System/Vector2.hpp>}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <SFML/System/Clock.hpp>}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classUtils}{Utils}}}
+\DoxyCodeLine{00005\ \{}
+\DoxyCodeLine{00006\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00007\ \ \ \ \ }
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{static}\ sf::Vector2f\ \mbox{\hyperlink{classUtils_aec29706b52a2b4ed24846f0137a3862f}{GetNormalizedDirection}}(sf::Vector2f\ pos\_a,\ sf::Vector2f\ pos\_b);}
+\DoxyCodeLine{00012\ \ \ \ \ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classUtils_afde71262939ea9dd513a94000aa32b9c}{GetDistance}}(sf::Vector2f\ pos\_a,\ sf::Vector2f\ pos\_b);}
+\DoxyCodeLine{00017\ \ \ \ \ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classUtils_a3aaf629a0eaedb63bc3bb78f0ca281b7}{GetDeltaTime}}();}
+\DoxyCodeLine{00020\ \ \ \ \ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{static}\ sf::Vector2f\ \mbox{\hyperlink{classUtils_a2781267d552473d0c6da3a2861f8c7fb}{VectorLerp}}(sf::Vector2f\ start,\ sf::Vector2f\ end,\ \textcolor{keywordtype}{float}\ duration);}
+\DoxyCodeLine{00026\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{static}\ sf::Vector2f\ GetDirection(sf::Vector2f\ pos\_a,\ sf::Vector2f\ pos\_b);}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{static}\ sf::Vector2f\ GetNormalized(sf::Vector2f\ input);}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{float}\ GetMagnitude(sf::Vector2f\ input);}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{float}\ FloatLerp(\textcolor{keywordtype}{float}\ a,\ \textcolor{keywordtype}{float}\ b,\ \textcolor{keywordtype}{float}\ f);}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ sf::Clock\ clockObj;}
+\DoxyCodeLine{00032\ \};}
+
+\end{DoxyCode}

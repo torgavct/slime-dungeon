@@ -1,0 +1,76 @@
+\doxysection{States.\+h}
+\hypertarget{States_8h_source}{}\label{States_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}Level.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}Object.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Player.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}SFML/Graphics/RenderWindow.hpp"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/Sprite.hpp>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/Font.hpp>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classState}{State}}}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{classState}{State}}(sf::RenderWindow*\ \mbox{\hyperlink{classState_ae6259a383c98ae7496266a76a9daf478}{window}})\ :\ \mbox{\hyperlink{classState_ae6259a383c98ae7496266a76a9daf478}{window}}\{\mbox{\hyperlink{classState_ae6259a383c98ae7496266a76a9daf478}{window}}\}\ \{\}}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classState}{\string~State}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classState}{State}}*\ \mbox{\hyperlink{classState_a493d9520a89fe994c3c6fdf1794fe315}{handle\_input}}()\ =\ 0;;}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classState_a71f5105bcdc39481be7684d853fe12e9}{render}}()\ =\ 0;;}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classState_a06315e7e44aadfa576cbf7e6c1c7d87f}{update}}()\ =\ 0;}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ sf::RenderWindow*\ \mbox{\hyperlink{classState_ae6259a383c98ae7496266a76a9daf478}{window}};\ }
+\DoxyCodeLine{00023\ \};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classGameState}{GameState}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classState}{State}}}
+\DoxyCodeLine{00026\ \{}
+\DoxyCodeLine{00027\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{classGameState}{GameState}}(sf::RenderWindow*\ \mbox{\hyperlink{classState_ae6259a383c98ae7496266a76a9daf478}{window}});}
+\DoxyCodeLine{00029\ ;}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{classState}{State}}*\ \mbox{\hyperlink{classGameState_ae0fa7d5b185971a64389a2532c050104}{handle\_input}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameState_a3610da76344c5c2cbcc5921f877226dc}{update}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameState_a2c36ada0cae89f91d956e2c91b070893}{render}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{bool}\ paused;}
+\DoxyCodeLine{00034\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00035\ \ \ \ \ sf::Font\ font;}
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{classPlayer}{Player}}\ player;}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{classLevel}{Level}}\ currentLevel;}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ checkCollisions();}
+\DoxyCodeLine{00039\ \};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classMenuState}{MenuState}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classState}{State}}}
+\DoxyCodeLine{00042\ \{}
+\DoxyCodeLine{00043\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{classMenuState}{MenuState}}(sf::RenderWindow*\ \mbox{\hyperlink{classState_ae6259a383c98ae7496266a76a9daf478}{window}});}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{classState}{State}}*\ \mbox{\hyperlink{classMenuState_a1c511f3116e9038ecac1682b602eff4c}{handle\_input}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMenuState_a97112c5ce679c35ed37e476187b5e60f}{update}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMenuState_ac216e0b4c7f5c5d39520165c45af0da6}{render}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00051\ \ \ \ \ sf::Font\ font;}
+\DoxyCodeLine{00052\ \ \ \ \ sf::Sprite\ background;}
+\DoxyCodeLine{00053\ \ \ \ \ sf::Sprite\ start;}
+\DoxyCodeLine{00054\ \ \ \ \ sf::Sprite\ quit;}
+\DoxyCodeLine{00055\ \};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classPauseState}{PauseState}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classState}{State}}}
+\DoxyCodeLine{00058\ \{}
+\DoxyCodeLine{00059\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00060\ \ \ \ \ \mbox{\hyperlink{classPauseState}{PauseState}}(\mbox{\hyperlink{classGameState}{GameState}}*\ game);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ \mbox{\hyperlink{classState}{State}}*\ \mbox{\hyperlink{classPauseState_aa8b44e001b915a9c43dfdd7dced9ad8e}{handle\_input}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPauseState_a2cfa4018eedeefbf6548b20db40af7d5}{update}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPauseState_a75c23f306a72b82b344007b55dea4ba4}{render}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00067\ \ \ \ \ \mbox{\hyperlink{classGameState}{GameState}}*\ game;}
+\DoxyCodeLine{00068\ \ \ \ \ sf::Font\ font;}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \ \ \ \ sf::Sprite\ background;}
+\DoxyCodeLine{00071\ \ \ \ \ sf::Sprite\ start;}
+\DoxyCodeLine{00072\ \ \ \ \ sf::Sprite\ quit;}
+\DoxyCodeLine{00073\ \ \ \ \ }
+\DoxyCodeLine{00074\ \};}
+
+\end{DoxyCode}

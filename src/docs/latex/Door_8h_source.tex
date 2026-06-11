@@ -1,0 +1,32 @@
+\doxysection{Door.\+h}
+\hypertarget{Door_8h_source}{}\label{Door_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}Object.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <SFML/System/Vector2.hpp>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Level.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}ResourceManager.h"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classDoor}{Door}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classObject}{Object}}}
+\DoxyCodeLine{00008\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ \ \ \ \ }
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{classDoor_ab944099541f544d9d3eb8bba625b78d8}{Door}}(sf::Vector2f\ \mbox{\hyperlink{classObject_aec00daf54d15f689af2eea0be28dbf86}{pos}},\ \textcolor{keywordtype}{int}\ toID,\ \textcolor{keywordtype}{char}\ dir,\ \mbox{\hyperlink{classLevel}{Level}}*\ lvl)\ :}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classObject}{Object}}(\mbox{\hyperlink{classObject_aec00daf54d15f689af2eea0be28dbf86}{pos}},\ \mbox{\hyperlink{classResourceManager}{ResourceManager}}::getSpriteWithName(Tex::\mbox{\hyperlink{classDoor}{Door}})),\ toID\{toID\},\ direction\{dir\},\ currentLevel(lvl)}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ setPosition(\mbox{\hyperlink{classObject_aec00daf54d15f689af2eea0be28dbf86}{pos}});}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classObject_a65be09abc56e93e0154c3a0e37f97579}{sprite}}.setPosition(\mbox{\hyperlink{classObject_aec00daf54d15f689af2eea0be28dbf86}{pos}});}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDoor_a7f8a9dab064f706a04054ab9e349775e}{collide}}(\mbox{\hyperlink{classObject}{Object}}*\ other)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00025\ \ \ }
+\DoxyCodeLine{00027\ \ \ \ \ sf::Vector2f\ \mbox{\hyperlink{classDoor_a608acb31b4f85c5803bd0013717a4ac4}{getPlayerSpawnPos}}();}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classDoor_aadafddabf6a0502519a2dbec4c4d18b6}{getToID}}();}
+\DoxyCodeLine{00030\ \ \ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{char}\ direction;\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{int}\ toID;\ }
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{classLevel}{Level}}*\ currentLevel;\ }
+\DoxyCodeLine{00035\ \};}
+
+\end{DoxyCode}

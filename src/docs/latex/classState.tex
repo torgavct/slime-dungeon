@@ -1,0 +1,79 @@
+\doxysection{State Class Reference}
+\hypertarget{classState}{}\label{classState}\index{State@{State}}
+
+
+Inheritance diagram for State\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{classState__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classState_a02d5f0207c19c47f231ed10e12764e2e}\label{classState_a02d5f0207c19c47f231ed10e12764e2e} 
+{\bfseries State} (sf\+::\+Render\+Window \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classState_ae6259a383c98ae7496266a76a9daf478}{window}})
+\item 
+virtual \mbox{\hyperlink{classState}{State}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classState_a493d9520a89fe994c3c6fdf1794fe315}{handle\+\_\+input}} ()=0
+\begin{DoxyCompactList}\small\item\em logic for handling input from keyboard and/or mouse \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classState_a71f5105bcdc39481be7684d853fe12e9}{render}} ()=0
+\begin{DoxyCompactList}\small\item\em logic for rendering to the screen (menu or game) \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classState_a06315e7e44aadfa576cbf7e6c1c7d87f}{update}} ()=0
+\begin{DoxyCompactList}\small\item\em logic for updating the state every frame \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classState_ae6259a383c98ae7496266a76a9daf478}\label{classState_ae6259a383c98ae7496266a76a9daf478} 
+sf\+::\+Render\+Window \texorpdfstring{$\ast$}{*} {\bfseries window}
+\begin{DoxyCompactList}\small\item\em the game window \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classState_a493d9520a89fe994c3c6fdf1794fe315}\label{classState_a493d9520a89fe994c3c6fdf1794fe315} 
+\index{State@{State}!handle\_input@{handle\_input}}
+\index{handle\_input@{handle\_input}!State@{State}}
+\doxysubsubsection{\texorpdfstring{handle\_input()}{handle\_input()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classState}{State}} \texorpdfstring{$\ast$}{*} State\+::handle\+\_\+input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+logic for handling input from keyboard and/or mouse 
+
+
+
+Implemented in \mbox{\hyperlink{classGameState_ae0fa7d5b185971a64389a2532c050104}{Game\+State}}, \mbox{\hyperlink{classMenuState_a1c511f3116e9038ecac1682b602eff4c}{Menu\+State}}, and \mbox{\hyperlink{classPauseState_aa8b44e001b915a9c43dfdd7dced9ad8e}{Pause\+State}}.
+
+\Hypertarget{classState_a71f5105bcdc39481be7684d853fe12e9}\label{classState_a71f5105bcdc39481be7684d853fe12e9} 
+\index{State@{State}!render@{render}}
+\index{render@{render}!State@{State}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily virtual void State\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+logic for rendering to the screen (menu or game) 
+
+
+
+Implemented in \mbox{\hyperlink{classGameState_a2c36ada0cae89f91d956e2c91b070893}{Game\+State}}, \mbox{\hyperlink{classMenuState_ac216e0b4c7f5c5d39520165c45af0da6}{Menu\+State}}, and \mbox{\hyperlink{classPauseState_a75c23f306a72b82b344007b55dea4ba4}{Pause\+State}}.
+
+\Hypertarget{classState_a06315e7e44aadfa576cbf7e6c1c7d87f}\label{classState_a06315e7e44aadfa576cbf7e6c1c7d87f} 
+\index{State@{State}!update@{update}}
+\index{update@{update}!State@{State}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void State\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+logic for updating the state every frame 
+
+
+
+Implemented in \mbox{\hyperlink{classGameState_a3610da76344c5c2cbcc5921f877226dc}{Game\+State}}, \mbox{\hyperlink{classMenuState_a97112c5ce679c35ed37e476187b5e60f}{Menu\+State}}, and \mbox{\hyperlink{classPauseState_a2cfa4018eedeefbf6548b20db40af7d5}{Pause\+State}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+States.\+h\end{DoxyCompactItemize}

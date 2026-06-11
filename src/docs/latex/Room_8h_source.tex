@@ -1,0 +1,52 @@
+\doxysection{Room.\+h}
+\hypertarget{Room_8h_source}{}\label{Room_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/Drawable.hpp>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/Rect.hpp>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/RenderStates.hpp>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/RenderTarget.hpp>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/Sprite.hpp>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <SFML/System/Vector2.hpp>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}Object.h"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}ResourceManager.h"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classLevel}{Level}};}
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classDoor}{Door}};}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classRoom}{Room}}\ :\ \textcolor{keyword}{public}\ sf::Drawable}
+\DoxyCodeLine{00017\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{classRoom}{Room}}(\textcolor{keywordtype}{int}\ doors[4],\ std::vector<Object*>\ objs,\ \mbox{\hyperlink{classLevel}{Level}}*\ lvl);}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{classRoom}{\string~Room}}();}
+\DoxyCodeLine{00025\ \ \ \ \ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classRoom_a9075c9c55390810e3696139f4dee5545}{globalID}}\ \{0\};\ }
+\DoxyCodeLine{00027\ \ \ \ \ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classRoom_a859f23d9561c5a4628d2583da1e9a5bd}{SpawnObjects}}(sf::Vector2f\ playerpos);}
+\DoxyCodeLine{00030\ \ \ \ \ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classRoom_a62e0bde34e11a9d608ffa45a9e07762d}{ValidateObjects}}();}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classRoom_ae9f6536b2640aa477c03bdffc8fb0511}{getID}}()\ \{\textcolor{keywordflow}{return}\ id;\}}
+\DoxyCodeLine{00038\ \ \ \ \ std::vector<Object*>\ \mbox{\hyperlink{classRoom_a4999169906e3be815b606d1a1a0d92af}{getObjects}}()\ \{\textcolor{keywordflow}{return}\ objects;\}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00041\ \ \ \ \ std::vector<Door*>\ \mbox{\hyperlink{classRoom_a93441bfa4e2b68981e58cf71b545bca3}{getDoors}}()\ \{\textcolor{keywordflow}{return}\ doorObjs;\}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classRoom_a57e7ac24118dd535b7a5ad21b61d55d7}{win}}\ \{\textcolor{keyword}{false}\};\ }
+\DoxyCodeLine{00044\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00045\ \ \ \ \ std::vector<Object*>\ objects;\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{int}\ id;\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{int}\ doors[4];\ }
+\DoxyCodeLine{00048\ \ \ \ \ std::vector<Door*>\ doorObjs;\ }
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ }
+\DoxyCodeLine{00053\ \ \ \ \ sf::Vector2f\ GetRandomPos(sf::Vector2f\ playerpos);}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{float}\ generateRandomFloat(\textcolor{keywordtype}{float}\ min,\ \textcolor{keywordtype}{float}\ max);}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ draw(sf::RenderTarget\&\ target,\ sf::RenderStates\ states)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00061\ \ \ }
+\DoxyCodeLine{00062\ \};}
+
+\end{DoxyCode}

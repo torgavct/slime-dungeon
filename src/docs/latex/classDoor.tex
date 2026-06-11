@@ -1,0 +1,110 @@
+\doxysection{Door Class Reference}
+\hypertarget{classDoor}{}\label{classDoor}\index{Door@{Door}}
+
+
+Inheritance diagram for Door\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{classDoor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Door\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{classDoor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDoor_ab944099541f544d9d3eb8bba625b78d8}{Door}} (sf\+::\+Vector2f \mbox{\hyperlink{classObject_aec00daf54d15f689af2eea0be28dbf86}{pos}}, int to\+ID, char dir, \mbox{\hyperlink{classLevel}{Level}} \texorpdfstring{$\ast$}{*}lvl)
+\begin{DoxyCompactList}\small\item\em Constructor for creating a new Door-\/object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDoor_a7f8a9dab064f706a04054ab9e349775e}{collide}} (\mbox{\hyperlink{classObject}{Object}} \texorpdfstring{$\ast$}{*}other) override
+\begin{DoxyCompactList}\small\item\em logic for handling collision with player. \end{DoxyCompactList}\item 
+\Hypertarget{classDoor_a608acb31b4f85c5803bd0013717a4ac4}\label{classDoor_a608acb31b4f85c5803bd0013717a4ac4} 
+sf\+::\+Vector2f {\bfseries get\+Player\+Spawn\+Pos} ()
+\begin{DoxyCompactList}\small\item\em returns the position to move the player when entering this room. \end{DoxyCompactList}\item 
+\Hypertarget{classDoor_aadafddabf6a0502519a2dbec4c4d18b6}\label{classDoor_aadafddabf6a0502519a2dbec4c4d18b6} 
+int {\bfseries get\+To\+ID} ()
+\begin{DoxyCompactList}\small\item\em returns the id of the room of which this room leads to. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classObject}{Object}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Object} (sf\+::\+Vector2f \mbox{\hyperlink{classObject_aec00daf54d15f689af2eea0be28dbf86}{pos}}, sf\+::\+Sprite \mbox{\hyperlink{classObject_a65be09abc56e93e0154c3a0e37f97579}{sprite}})
+\item 
+sf\+::\+Sprite \& {\bfseries get\+\_\+sprite} ()
+\begin{DoxyCompactList}\small\item\em function for getting the sf\+::\+Sprite. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f {\bfseries get\+\_\+pos} ()
+\begin{DoxyCompactList}\small\item\em function for getting the position of the object. \end{DoxyCompactList}\item 
+void {\bfseries move\+To\+Pos} (sf\+::\+Vector2f new\+Pos)
+\begin{DoxyCompactList}\small\item\em logic for moving this very frame. \end{DoxyCompactList}\item 
+int {\bfseries get\+\_\+id} ()
+\begin{DoxyCompactList}\small\item\em function for getting the unique global ID of the object. \end{DoxyCompactList}\item 
+sf\+::\+Float\+Rect {\bfseries Get\+Global\+Bounds} ()
+\begin{DoxyCompactList}\small\item\em returns the rectangle of the space that the sprite is taking up, usable for checking collisions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classObject}{Object}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classObject_a6c3dc18899c7d428b35b88b1474778d0}{draw}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\begin{DoxyCompactList}\small\item\em implementation of sf\+::\+Drawable\textquotesingle{}s draw for custom behaviour when calling window.\+draw on this. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classObject}{Object}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries id}
+\begin{DoxyCompactList}\small\item\em a unique global id which can be used to identity an instance. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f {\bfseries pos}
+\begin{DoxyCompactList}\small\item\em the position of this object. \end{DoxyCompactList}\item 
+sf\+::\+Sprite {\bfseries sprite}
+\begin{DoxyCompactList}\small\item\em the sprite to draw to represent this object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classDoor_ab944099541f544d9d3eb8bba625b78d8}\label{classDoor_ab944099541f544d9d3eb8bba625b78d8} 
+\index{Door@{Door}!Door@{Door}}
+\index{Door@{Door}!Door@{Door}}
+\doxysubsubsection{\texorpdfstring{Door()}{Door()}}
+{\footnotesize\ttfamily Door\+::\+Door (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{pos,  }\item[{int}]{to\+ID,  }\item[{char}]{dir,  }\item[{\mbox{\hyperlink{classLevel}{Level}} \texorpdfstring{$\ast$}{*}}]{lvl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for creating a new Door-\/object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & -\/ the position of this door. \\
+\hline
+{\em to\+Id} & -\/ the id of the room where this door leads to. \\
+\hline
+{\em dir} & -\/ the direction (NESW) of the door. \\
+\hline
+{\em lvl} & -\/ the level where this door resides in. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classDoor_a7f8a9dab064f706a04054ab9e349775e}\label{classDoor_a7f8a9dab064f706a04054ab9e349775e} 
+\index{Door@{Door}!collide@{collide}}
+\index{collide@{collide}!Door@{Door}}
+\doxysubsubsection{\texorpdfstring{collide()}{collide()}}
+{\footnotesize\ttfamily void Door\+::collide (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classObject}{Object}} \texorpdfstring{$\ast$}{*}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+logic for handling collision with player. 
+
+
+
+Implements \mbox{\hyperlink{classObject_ad8381425a173f8ebd76972da01454f2a}{Object}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Door.\+h\item 
+Door.\+cc\end{DoxyCompactItemize}

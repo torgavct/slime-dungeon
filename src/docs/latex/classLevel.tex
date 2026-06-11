@@ -1,0 +1,59 @@
+\doxysection{Level Class Reference}
+\hypertarget{classLevel}{}\label{classLevel}\index{Level@{Level}}
+
+
+Collaboration diagram for Level\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{classLevel__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classLevel_a047247e265efebad7a11d93c99c51186}\label{classLevel_a047247e265efebad7a11d93c99c51186} 
+{\bfseries Level} (\mbox{\hyperlink{classPlayer}{Player}} \texorpdfstring{$\ast$}{*}player)
+\begin{DoxyCompactList}\small\item\em Constructor for creating a new Level-\/object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLevel_a745ae81661f4c51a767d341870f50fa3}{Go\+To}} (\mbox{\hyperlink{classDoor}{Door}} \texorpdfstring{$\ast$}{*}entry, int id)
+\begin{DoxyCompactList}\small\item\em Function for moving to another room. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRoom}{Room}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classLevel_aea8fb467940cbb003ce1463222342734}{current\+Room}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classLevel_a745ae81661f4c51a767d341870f50fa3}\label{classLevel_a745ae81661f4c51a767d341870f50fa3} 
+\index{Level@{Level}!GoTo@{GoTo}}
+\index{GoTo@{GoTo}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{GoTo()}{GoTo()}}
+{\footnotesize\ttfamily void Level\+::\+Go\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDoor}{Door}} \texorpdfstring{$\ast$}{*}}]{entry,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Function for moving to another room. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entry} & -\/ Ptr to the door that the player collided with. \\
+\hline
+{\em id} & -\/ the id of the room that the player is moving to. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classLevel_aea8fb467940cbb003ce1463222342734}\label{classLevel_aea8fb467940cbb003ce1463222342734} 
+\index{Level@{Level}!currentRoom@{currentRoom}}
+\index{currentRoom@{currentRoom}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{currentRoom}{currentRoom}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRoom}{Room}}\texorpdfstring{$\ast$}{*} Level\+::current\+Room}
+
+Ptr to the current\+Room that the player is in. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Level.\+h\item 
+Level.\+cc\end{DoxyCompactItemize}

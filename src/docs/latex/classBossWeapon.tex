@@ -1,0 +1,124 @@
+\doxysection{Boss\+Weapon Class Reference}
+\hypertarget{classBossWeapon}{}\label{classBossWeapon}\index{BossWeapon@{BossWeapon}}
+
+
+Inheritance diagram for Boss\+Weapon\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{classBossWeapon__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Boss\+Weapon\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{classBossWeapon__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classBossWeapon_a3296fc2c8d312088bc6c31677cf96fb1}\label{classBossWeapon_a3296fc2c8d312088bc6c31677cf96fb1} 
+{\bfseries Boss\+Weapon} (sf\+::\+Vector2f \mbox{\hyperlink{classObject_aec00daf54d15f689af2eea0be28dbf86}{pos}})
+\begin{DoxyCompactList}\small\item\em constructor for creating a new boss weapon (weapon without cooldown) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classProjectile}{Projectile}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classBossWeapon_a3015102cfdc024e23fb4b715e85a8ce6}{use}} (sf\+::\+Vector2f \mbox{\hyperlink{classObject_aec00daf54d15f689af2eea0be28dbf86}{pos}}, float angle) override
+\begin{DoxyCompactList}\small\item\em fire a projectile from a position at an angle \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classWeapon}{Weapon}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Weapon} ()
+\begin{DoxyCompactList}\small\item\em @ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classWeapon_a8d33e3d77d77d2609d483f274831bbb3}{Weapon}} (sf\+::\+Vector2f \mbox{\hyperlink{classObject_aec00daf54d15f689af2eea0be28dbf86}{pos}}, sf\+::\+Sprite \mbox{\hyperlink{classObject_a65be09abc56e93e0154c3a0e37f97579}{sprite}}, int \mbox{\hyperlink{classWeapon_aeba4a8c1b0632bdeeb8420871a2c2c97}{frequency}}, float \mbox{\hyperlink{classWeapon_a8277e4e3bad83900641a2b20fae98456}{speed}}, bool \mbox{\hyperlink{classWeapon_abf6c3e9f9ac4571aa305a40a798d2dcf}{is\+Enemy\+Gun}})
+\begin{DoxyCompactList}\small\item\em weapon stats and position \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWeapon_af5c824842bbc47aa9f45f33010993d24}{collide}} (\mbox{\hyperlink{classObject}{Object}} \texorpdfstring{$\ast$}{*}other)
+\begin{DoxyCompactList}\small\item\em logic for projectiles collide \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classObject}{Object}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Object} (sf\+::\+Vector2f \mbox{\hyperlink{classObject_aec00daf54d15f689af2eea0be28dbf86}{pos}}, sf\+::\+Sprite \mbox{\hyperlink{classObject_a65be09abc56e93e0154c3a0e37f97579}{sprite}})
+\item 
+sf\+::\+Sprite \& {\bfseries get\+\_\+sprite} ()
+\begin{DoxyCompactList}\small\item\em function for getting the sf\+::\+Sprite. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f {\bfseries get\+\_\+pos} ()
+\begin{DoxyCompactList}\small\item\em function for getting the position of the object. \end{DoxyCompactList}\item 
+void {\bfseries move\+To\+Pos} (sf\+::\+Vector2f new\+Pos)
+\begin{DoxyCompactList}\small\item\em logic for moving this very frame. \end{DoxyCompactList}\item 
+int {\bfseries get\+\_\+id} ()
+\begin{DoxyCompactList}\small\item\em function for getting the unique global ID of the object. \end{DoxyCompactList}\item 
+sf\+::\+Float\+Rect {\bfseries Get\+Global\+Bounds} ()
+\begin{DoxyCompactList}\small\item\em returns the rectangle of the space that the sprite is taking up, usable for checking collisions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classBossWeapon_a1994f7653d57a775a907c2eec07938c5}\label{classBossWeapon_a1994f7653d57a775a907c2eec07938c5} 
+sf\+::\+Clock {\bfseries clock}
+\begin{DoxyCompactList}\small\item\em measures the time since the last fired shot \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classWeapon}{Weapon}}}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Clock {\bfseries clock}
+\begin{DoxyCompactList}\small\item\em measures how long since the last projectile was shot \end{DoxyCompactList}\item 
+bool {\bfseries is\+Picked\+Up}
+\begin{DoxyCompactList}\small\item\em if weapon is picked up \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{classWeapon}{Weapon}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classWeapon}{Weapon}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classWeapon_ab8e86a9249f56b14921c0455f5233c6f}{Create\+New\+From\+Type}} (int type)
+\begin{DoxyCompactList}\small\item\em creates a new weapon, ex\+: type 2 or 3. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classObject}{Object}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classObject_a6c3dc18899c7d428b35b88b1474778d0}{draw}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\begin{DoxyCompactList}\small\item\em implementation of sf\+::\+Drawable\textquotesingle{}s draw for custom behaviour when calling window.\+draw on this. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classWeapon}{Weapon}}}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries is\+Enemy\+Gun}
+\begin{DoxyCompactList}\small\item\em if the weapon is from ranged or boss \end{DoxyCompactList}\item 
+int {\bfseries frequency}
+\begin{DoxyCompactList}\small\item\em shooting frequency for the current weapon \end{DoxyCompactList}\item 
+float {\bfseries speed}
+\begin{DoxyCompactList}\small\item\em projectile speed \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classObject}{Object}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries id}
+\begin{DoxyCompactList}\small\item\em a unique global id which can be used to identity an instance. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f {\bfseries pos}
+\begin{DoxyCompactList}\small\item\em the position of this object. \end{DoxyCompactList}\item 
+sf\+::\+Sprite {\bfseries sprite}
+\begin{DoxyCompactList}\small\item\em the sprite to draw to represent this object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classBossWeapon_a3015102cfdc024e23fb4b715e85a8ce6}\label{classBossWeapon_a3015102cfdc024e23fb4b715e85a8ce6} 
+\index{BossWeapon@{BossWeapon}!use@{use}}
+\index{use@{use}!BossWeapon@{BossWeapon}}
+\doxysubsubsection{\texorpdfstring{use()}{use()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classProjectile}{Projectile}} \texorpdfstring{$\ast$}{*} Boss\+Weapon\+::use (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{pos,  }\item[{float}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+fire a projectile from a position at an angle 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & -\/ the postion to fire from \\
+\hline
+{\em angle} & -\/ the angle to fire at \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classWeapon_adbdfe08de882d48bc70cced2cdeaebc3}{Weapon}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Boss\+Weapon.\+h\item 
+Boss\+Weapon.\+cc\end{DoxyCompactItemize}

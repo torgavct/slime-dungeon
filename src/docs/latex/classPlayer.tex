@@ -1,0 +1,144 @@
+\doxysection{Player Class Reference}
+\hypertarget{classPlayer}{}\label{classPlayer}\index{Player@{Player}}
+
+
+Inheritance diagram for Player\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{classPlayer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Player\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{classPlayer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classPlayer_a590f9fa9624d8734027fa2b290fa909e}\label{classPlayer_a590f9fa9624d8734027fa2b290fa909e} 
+{\bfseries Player} (sf\+::\+Vector2f \mbox{\hyperlink{classObject_aec00daf54d15f689af2eea0be28dbf86}{pos}})
+\begin{DoxyCompactList}\small\item\em Constructor, should only be called ONCE during the entire game loop. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_a5869f4a49e7e4b6e4a4e52399ef31f36}{move}} (sf\+::\+Vector2f \mbox{\hyperlink{classObject_aec00daf54d15f689af2eea0be28dbf86}{pos}}) override
+\begin{DoxyCompactList}\small\item\em empty implementation since movement is handled by \doxylink{classPlayer_aa22ec2c7cc6edff09c817dad87ae1e85}{handle\+\_\+input()} and the keyboard. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_a297630f60926f615b08132388aea74e3}{collide}} (\mbox{\hyperlink{classObject}{Object}} \texorpdfstring{$\ast$}{*}other) override
+\begin{DoxyCompactList}\small\item\em behaviour for collision between certain objects. \end{DoxyCompactList}\item 
+\Hypertarget{classPlayer_aa22ec2c7cc6edff09c817dad87ae1e85}\label{classPlayer_aa22ec2c7cc6edff09c817dad87ae1e85} 
+void {\bfseries handle\+\_\+input} ()
+\begin{DoxyCompactList}\small\item\em handles the keyboard input and resulting movement. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classEntity}{Entity}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Entity} (sf\+::\+Vector2f \mbox{\hyperlink{classObject_aec00daf54d15f689af2eea0be28dbf86}{pos}}, sf\+::\+Sprite \mbox{\hyperlink{classObject_a65be09abc56e93e0154c3a0e37f97579}{sprite}}, int \mbox{\hyperlink{classEntity_ae9d09aedb5646c7d29c5838a717a02dd}{max\+\_\+health}}, int \mbox{\hyperlink{classEntity_a12ea871d945d59cbf57b8f8f7d2179ed}{speed}}, \mbox{\hyperlink{classWeapon}{Weapon}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classEntity_adde301c773b951aa9630ebc8646d381b}{weapon}})
+\begin{DoxyCompactList}\small\item\em Constructor for creating a new \doxylink{classEntity}{Entity}. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Entity} ()
+\begin{DoxyCompactList}\small\item\em Destructor for deleting an \doxylink{classEntity}{Entity}. \end{DoxyCompactList}\item 
+void {\bfseries pushback} ()
+\begin{DoxyCompactList}\small\item\em push this entity towards target\+Pos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEntity_a873f61ebe878480cd6892a272c12b6f2}{draw}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const override
+\begin{DoxyCompactList}\small\item\em custom behaviour for drawing \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEntity_a7dd138ecb5746373c1ac637c5643bb0a}{shoot}} (float angle)
+\begin{DoxyCompactList}\small\item\em logic for shooting if a weapon is set in the constructer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEntity_a532c15bc960ddd36e402aa7b80950157}{change\+\_\+hp}} (int diff)
+\begin{DoxyCompactList}\small\item\em function for changing the hp. \end{DoxyCompactList}\item 
+int {\bfseries get\+\_\+hp} ()
+\begin{DoxyCompactList}\small\item\em returns the hp \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classProjectile}{Projectile}} \texorpdfstring{$\ast$}{*} $>$ \& {\bfseries get\+\_\+projectiles} ()
+\begin{DoxyCompactList}\small\item\em return any projectiles this entity has fired. \end{DoxyCompactList}\item 
+void {\bfseries remove\+\_\+projectile} (\mbox{\hyperlink{classProjectile}{Projectile}} \texorpdfstring{$\ast$}{*}p)
+\begin{DoxyCompactList}\small\item\em remove a projectile this entity may have fired. \end{DoxyCompactList}\item 
+void {\bfseries goto\+\_\+old\+\_\+pos} ()
+\begin{DoxyCompactList}\small\item\em moves this entity to the old position it was when move\+Topos was called. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classObject}{Object}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Object} (sf\+::\+Vector2f \mbox{\hyperlink{classObject_aec00daf54d15f689af2eea0be28dbf86}{pos}}, sf\+::\+Sprite \mbox{\hyperlink{classObject_a65be09abc56e93e0154c3a0e37f97579}{sprite}})
+\item 
+sf\+::\+Sprite \& {\bfseries get\+\_\+sprite} ()
+\begin{DoxyCompactList}\small\item\em function for getting the sf\+::\+Sprite. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f {\bfseries get\+\_\+pos} ()
+\begin{DoxyCompactList}\small\item\em function for getting the position of the object. \end{DoxyCompactList}\item 
+void {\bfseries move\+To\+Pos} (sf\+::\+Vector2f new\+Pos)
+\begin{DoxyCompactList}\small\item\em logic for moving this very frame. \end{DoxyCompactList}\item 
+int {\bfseries get\+\_\+id} ()
+\begin{DoxyCompactList}\small\item\em function for getting the unique global ID of the object. \end{DoxyCompactList}\item 
+sf\+::\+Float\+Rect {\bfseries Get\+Global\+Bounds} ()
+\begin{DoxyCompactList}\small\item\em returns the rectangle of the space that the sprite is taking up, usable for checking collisions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classEntity}{Entity}}}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries is\+Dead}
+\begin{DoxyCompactList}\small\item\em true if this entity is dead and should be removed from the gameworld. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classWeapon}{Weapon}} \texorpdfstring{$\ast$}{*} {\bfseries weapon}
+\begin{DoxyCompactList}\small\item\em ptr to a weapon which is used when calling \doxylink{classEntity_a7dd138ecb5746373c1ac637c5643bb0a}{shoot()} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classEntity}{Entity}}}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries is\+Pushed}
+\begin{DoxyCompactList}\small\item\em true if this entity is currently in the process of being pushed to target\+Pos. \end{DoxyCompactList}\item 
+int {\bfseries hp}
+\begin{DoxyCompactList}\small\item\em how much hp this entity currently has. \end{DoxyCompactList}\item 
+int {\bfseries max\+\_\+health}
+\begin{DoxyCompactList}\small\item\em as much hp this entity can have. \end{DoxyCompactList}\item 
+int {\bfseries speed}
+\begin{DoxyCompactList}\small\item\em how fast the entity is, used for calculating movement per frame. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classProjectile}{Projectile}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries projectiles}
+\begin{DoxyCompactList}\small\item\em vector with ptrs to all projectiles this entity has fired \end{DoxyCompactList}\item 
+sf\+::\+Vector2f {\bfseries old\+\_\+pos}
+\begin{DoxyCompactList}\small\item\em the old position it had before \doxylink{classObject_a1c26bb04b5a39f4f295b9642de07b7c8}{move\+To\+Pos()} was called. \end{DoxyCompactList}\item 
+float {\bfseries time}
+\begin{DoxyCompactList}\small\item\em used when lerping to target\+Pos \end{DoxyCompactList}\item 
+sf\+::\+Vector2f {\bfseries target\+Pos}
+\begin{DoxyCompactList}\small\item\em the position where the entity will be pushed to if a certain collision event has occured. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classObject}{Object}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries id}
+\begin{DoxyCompactList}\small\item\em a unique global id which can be used to identity an instance. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f {\bfseries pos}
+\begin{DoxyCompactList}\small\item\em the position of this object. \end{DoxyCompactList}\item 
+sf\+::\+Sprite {\bfseries sprite}
+\begin{DoxyCompactList}\small\item\em the sprite to draw to represent this object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classPlayer_a297630f60926f615b08132388aea74e3}\label{classPlayer_a297630f60926f615b08132388aea74e3} 
+\index{Player@{Player}!collide@{collide}}
+\index{collide@{collide}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{collide()}{collide()}}
+{\footnotesize\ttfamily void Player\+::collide (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classObject}{Object}} \texorpdfstring{$\ast$}{*}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+behaviour for collision between certain objects. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classEntity_a603572b9711bff6ceb00b04f84d4fbd3}{Entity}}.
+
+\Hypertarget{classPlayer_a5869f4a49e7e4b6e4a4e52399ef31f36}\label{classPlayer_a5869f4a49e7e4b6e4a4e52399ef31f36} 
+\index{Player@{Player}!move@{move}}
+\index{move@{move}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Player\+::move (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+empty implementation since movement is handled by \doxylink{classPlayer_aa22ec2c7cc6edff09c817dad87ae1e85}{handle\+\_\+input()} and the keyboard. 
+
+
+
+Implements \mbox{\hyperlink{classEntity_ac971afd66fb5ef906baea7a06d7a32d7}{Entity}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Player.\+h\item 
+Player.\+cc\end{DoxyCompactItemize}

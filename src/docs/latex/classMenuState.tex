@@ -1,0 +1,94 @@
+\doxysection{Menu\+State Class Reference}
+\hypertarget{classMenuState}{}\label{classMenuState}\index{MenuState@{MenuState}}
+
+
+Inheritance diagram for Menu\+State\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=149pt]{classMenuState__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Menu\+State\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=149pt]{classMenuState__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classMenuState_a2740fee6e2a21f282c896f5d005f0b63}\label{classMenuState_a2740fee6e2a21f282c896f5d005f0b63} 
+{\bfseries Menu\+State} (sf\+::\+Render\+Window \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classState_ae6259a383c98ae7496266a76a9daf478}{window}})
+\item 
+\mbox{\hyperlink{classState}{State}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classMenuState_a1c511f3116e9038ecac1682b602eff4c}{handle\+\_\+input}} () override
+\begin{DoxyCompactList}\small\item\em logic for handling input from keyboard and/or mouse \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMenuState_a97112c5ce679c35ed37e476187b5e60f}{update}} () override
+\begin{DoxyCompactList}\small\item\em logic for updating the state every frame \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMenuState_ac216e0b4c7f5c5d39520165c45af0da6}{render}} () override
+\begin{DoxyCompactList}\small\item\em logic for rendering to the screen (menu or game) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classState}{State}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries State} (sf\+::\+Render\+Window \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classState_ae6259a383c98ae7496266a76a9daf478}{window}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classState}{State}}}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Render\+Window \texorpdfstring{$\ast$}{*} {\bfseries window}
+\begin{DoxyCompactList}\small\item\em the game window \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classMenuState_a1c511f3116e9038ecac1682b602eff4c}\label{classMenuState_a1c511f3116e9038ecac1682b602eff4c} 
+\index{MenuState@{MenuState}!handle\_input@{handle\_input}}
+\index{handle\_input@{handle\_input}!MenuState@{MenuState}}
+\doxysubsubsection{\texorpdfstring{handle\_input()}{handle\_input()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classState}{State}} \texorpdfstring{$\ast$}{*} Menu\+State\+::handle\+\_\+input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+logic for handling input from keyboard and/or mouse 
+
+
+
+Implements \mbox{\hyperlink{classState_a493d9520a89fe994c3c6fdf1794fe315}{State}}.
+
+\Hypertarget{classMenuState_ac216e0b4c7f5c5d39520165c45af0da6}\label{classMenuState_ac216e0b4c7f5c5d39520165c45af0da6} 
+\index{MenuState@{MenuState}!render@{render}}
+\index{render@{render}!MenuState@{MenuState}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Menu\+State\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+logic for rendering to the screen (menu or game) 
+
+
+
+Implements \mbox{\hyperlink{classState_a71f5105bcdc39481be7684d853fe12e9}{State}}.
+
+\Hypertarget{classMenuState_a97112c5ce679c35ed37e476187b5e60f}\label{classMenuState_a97112c5ce679c35ed37e476187b5e60f} 
+\index{MenuState@{MenuState}!update@{update}}
+\index{update@{update}!MenuState@{MenuState}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Menu\+State\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+logic for updating the state every frame 
+
+
+
+Implements \mbox{\hyperlink{classState_a06315e7e44aadfa576cbf7e6c1c7d87f}{State}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+States.\+h\item 
+Menu\+State.\+cc\end{DoxyCompactItemize}

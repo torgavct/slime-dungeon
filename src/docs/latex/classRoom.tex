@@ -1,0 +1,80 @@
+\doxysection{Room Class Reference}
+\hypertarget{classRoom}{}\label{classRoom}\index{Room@{Room}}
+
+
+Inheritance diagram for Room\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{classRoom__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Room\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{classRoom__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRoom_a243c3b94530dc2c30253adb74f10105f}{Room}} (int doors\mbox{[}4\mbox{]}, std\+::vector$<$ \mbox{\hyperlink{classObject}{Object}} \texorpdfstring{$\ast$}{*} $>$ objs, \mbox{\hyperlink{classLevel}{Level}} \texorpdfstring{$\ast$}{*}lvl)
+\begin{DoxyCompactList}\small\item\em Constructor for creating a new room. \end{DoxyCompactList}\item 
+\Hypertarget{classRoom_a859f23d9561c5a4628d2583da1e9a5bd}\label{classRoom_a859f23d9561c5a4628d2583da1e9a5bd} 
+void {\bfseries Spawn\+Objects} (sf\+::\+Vector2f playerpos)
+\begin{DoxyCompactList}\small\item\em Function for spawning all enemies and loot when the player enters. \end{DoxyCompactList}\item 
+\Hypertarget{classRoom_a62e0bde34e11a9d608ffa45a9e07762d}\label{classRoom_a62e0bde34e11a9d608ffa45a9e07762d} 
+void {\bfseries Validate\+Objects} ()
+\begin{DoxyCompactList}\small\item\em Function for validating which objects should exist and which that should be deleted/removed. \end{DoxyCompactList}\item 
+\Hypertarget{classRoom_ae9f6536b2640aa477c03bdffc8fb0511}\label{classRoom_ae9f6536b2640aa477c03bdffc8fb0511} 
+int {\bfseries get\+ID} ()
+\begin{DoxyCompactList}\small\item\em returns the id of the room. \end{DoxyCompactList}\item 
+\Hypertarget{classRoom_a4999169906e3be815b606d1a1a0d92af}\label{classRoom_a4999169906e3be815b606d1a1a0d92af} 
+std\+::vector$<$ \mbox{\hyperlink{classObject}{Object}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries get\+Objects} ()
+\begin{DoxyCompactList}\small\item\em returns the vector with all the objects currently in the room. \end{DoxyCompactList}\item 
+\Hypertarget{classRoom_a93441bfa4e2b68981e58cf71b545bca3}\label{classRoom_a93441bfa4e2b68981e58cf71b545bca3} 
+std\+::vector$<$ \mbox{\hyperlink{classDoor}{Door}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries get\+Doors} ()
+\begin{DoxyCompactList}\small\item\em returns the vector with all Door-\/objects in the room. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classRoom_a57e7ac24118dd535b7a5ad21b61d55d7}\label{classRoom_a57e7ac24118dd535b7a5ad21b61d55d7} 
+bool {\bfseries win} \{false\}
+\begin{DoxyCompactList}\small\item\em boolean describing if the player has the defeated the boss that may be inside the room. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classRoom_a9075c9c55390810e3696139f4dee5545}\label{classRoom_a9075c9c55390810e3696139f4dee5545} 
+static int {\bfseries global\+ID} \{0\}
+\begin{DoxyCompactList}\small\item\em a static int used for assigning unique ids to rooms. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classRoom_a243c3b94530dc2c30253adb74f10105f}\label{classRoom_a243c3b94530dc2c30253adb74f10105f} 
+\index{Room@{Room}!Room@{Room}}
+\index{Room@{Room}!Room@{Room}}
+\doxysubsubsection{\texorpdfstring{Room()}{Room()}}
+{\footnotesize\ttfamily Room\+::\+Room (\begin{DoxyParamCaption}\item[{int}]{doors\mbox{[}4\mbox{]},  }\item[{std\+::vector$<$ \mbox{\hyperlink{classObject}{Object}} \texorpdfstring{$\ast$}{*} $>$}]{objs,  }\item[{\mbox{\hyperlink{classLevel}{Level}} \texorpdfstring{$\ast$}{*}}]{lvl }\end{DoxyParamCaption})}
+
+
+
+Constructor for creating a new room. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em doors} & -\/ array describing which doors that exists, a non-\/zero value means a door is on that specific wall. \\
+\hline
+{\em objs} & -\/ vector of all objects (enemies/loot) that is in the room. \\
+\hline
+{\em lvl} & -\/ ptr to the level where the room resides. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Room.\+h\item 
+Room.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,99 @@
+\doxysection{Game\+State Class Reference}
+\hypertarget{classGameState}{}\label{classGameState}\index{GameState@{GameState}}
+
+
+Inheritance diagram for Game\+State\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classGameState__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Game\+State\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classGameState__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classGameState_a2be796f58ac0a3af5a4b98e5362e33da}\label{classGameState_a2be796f58ac0a3af5a4b98e5362e33da} 
+{\bfseries Game\+State} (sf\+::\+Render\+Window \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classState_ae6259a383c98ae7496266a76a9daf478}{window}})
+\item 
+\mbox{\hyperlink{classState}{State}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classGameState_ae0fa7d5b185971a64389a2532c050104}{handle\+\_\+input}} () override
+\begin{DoxyCompactList}\small\item\em logic for handling input from keyboard and/or mouse \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGameState_a3610da76344c5c2cbcc5921f877226dc}{update}} () override
+\begin{DoxyCompactList}\small\item\em logic for updating the state every frame \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGameState_a2c36ada0cae89f91d956e2c91b070893}{render}} () override
+\begin{DoxyCompactList}\small\item\em logic for rendering to the screen (menu or game) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classState}{State}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries State} (sf\+::\+Render\+Window \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classState_ae6259a383c98ae7496266a76a9daf478}{window}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classGameState_acd86c056832e34dd6d669c99b607036f}\label{classGameState_acd86c056832e34dd6d669c99b607036f} 
+bool {\bfseries paused}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classState}{State}}}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Render\+Window \texorpdfstring{$\ast$}{*} {\bfseries window}
+\begin{DoxyCompactList}\small\item\em the game window \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classGameState_ae0fa7d5b185971a64389a2532c050104}\label{classGameState_ae0fa7d5b185971a64389a2532c050104} 
+\index{GameState@{GameState}!handle\_input@{handle\_input}}
+\index{handle\_input@{handle\_input}!GameState@{GameState}}
+\doxysubsubsection{\texorpdfstring{handle\_input()}{handle\_input()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classState}{State}} \texorpdfstring{$\ast$}{*} Game\+State\+::handle\+\_\+input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+logic for handling input from keyboard and/or mouse 
+
+
+
+Implements \mbox{\hyperlink{classState_a493d9520a89fe994c3c6fdf1794fe315}{State}}.
+
+\Hypertarget{classGameState_a2c36ada0cae89f91d956e2c91b070893}\label{classGameState_a2c36ada0cae89f91d956e2c91b070893} 
+\index{GameState@{GameState}!render@{render}}
+\index{render@{render}!GameState@{GameState}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Game\+State\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+logic for rendering to the screen (menu or game) 
+
+
+
+Implements \mbox{\hyperlink{classState_a71f5105bcdc39481be7684d853fe12e9}{State}}.
+
+\Hypertarget{classGameState_a3610da76344c5c2cbcc5921f877226dc}\label{classGameState_a3610da76344c5c2cbcc5921f877226dc} 
+\index{GameState@{GameState}!update@{update}}
+\index{update@{update}!GameState@{GameState}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Game\+State\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+logic for updating the state every frame 
+
+
+
+Implements \mbox{\hyperlink{classState_a06315e7e44aadfa576cbf7e6c1c7d87f}{State}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+States.\+h\item 
+Game\+State.\+cc\end{DoxyCompactItemize}

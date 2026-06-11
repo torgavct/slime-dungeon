@@ -1,0 +1,94 @@
+\doxysection{Pause\+State Class Reference}
+\hypertarget{classPauseState}{}\label{classPauseState}\index{PauseState@{PauseState}}
+
+
+Inheritance diagram for Pause\+State\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classPauseState__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Pause\+State\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classPauseState__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classPauseState_ab9d3abd397526869d4197d20c417c626}\label{classPauseState_ab9d3abd397526869d4197d20c417c626} 
+{\bfseries Pause\+State} (\mbox{\hyperlink{classGameState}{Game\+State}} \texorpdfstring{$\ast$}{*}game)
+\item 
+\mbox{\hyperlink{classState}{State}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classPauseState_aa8b44e001b915a9c43dfdd7dced9ad8e}{handle\+\_\+input}} () override
+\begin{DoxyCompactList}\small\item\em logic for handling input from keyboard and/or mouse \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPauseState_a2cfa4018eedeefbf6548b20db40af7d5}{update}} () override
+\begin{DoxyCompactList}\small\item\em logic for updating the state every frame \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPauseState_a75c23f306a72b82b344007b55dea4ba4}{render}} () override
+\begin{DoxyCompactList}\small\item\em logic for rendering to the screen (menu or game) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classState}{State}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries State} (sf\+::\+Render\+Window \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classState_ae6259a383c98ae7496266a76a9daf478}{window}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classState}{State}}}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Render\+Window \texorpdfstring{$\ast$}{*} {\bfseries window}
+\begin{DoxyCompactList}\small\item\em the game window \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classPauseState_aa8b44e001b915a9c43dfdd7dced9ad8e}\label{classPauseState_aa8b44e001b915a9c43dfdd7dced9ad8e} 
+\index{PauseState@{PauseState}!handle\_input@{handle\_input}}
+\index{handle\_input@{handle\_input}!PauseState@{PauseState}}
+\doxysubsubsection{\texorpdfstring{handle\_input()}{handle\_input()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classState}{State}} \texorpdfstring{$\ast$}{*} Pause\+State\+::handle\+\_\+input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+logic for handling input from keyboard and/or mouse 
+
+
+
+Implements \mbox{\hyperlink{classState_a493d9520a89fe994c3c6fdf1794fe315}{State}}.
+
+\Hypertarget{classPauseState_a75c23f306a72b82b344007b55dea4ba4}\label{classPauseState_a75c23f306a72b82b344007b55dea4ba4} 
+\index{PauseState@{PauseState}!render@{render}}
+\index{render@{render}!PauseState@{PauseState}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Pause\+State\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+logic for rendering to the screen (menu or game) 
+
+
+
+Implements \mbox{\hyperlink{classState_a71f5105bcdc39481be7684d853fe12e9}{State}}.
+
+\Hypertarget{classPauseState_a2cfa4018eedeefbf6548b20db40af7d5}\label{classPauseState_a2cfa4018eedeefbf6548b20db40af7d5} 
+\index{PauseState@{PauseState}!update@{update}}
+\index{update@{update}!PauseState@{PauseState}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Pause\+State\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+logic for updating the state every frame 
+
+
+
+Implements \mbox{\hyperlink{classState_a06315e7e44aadfa576cbf7e6c1c7d87f}{State}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+States.\+h\item 
+Pause\+State.\+cc\end{DoxyCompactItemize}

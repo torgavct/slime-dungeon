@@ -1,0 +1,51 @@
+\doxysection{Resource\+Manager.\+h}
+\hypertarget{ResourceManager_8h_source}{}\label{ResourceManager_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/Rect.hpp>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/RenderStates.hpp>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/Sprite.hpp>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/Texture.hpp>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <SFML/System/Vector2.hpp>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classResourceManager}{ResourceManager}}}
+\DoxyCodeLine{00012\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \textcolor{keyword}{enum}\ Texture\_Name}
+\DoxyCodeLine{00015\ \ \ \{}
+\DoxyCodeLine{00016\ \ \ \ \ Background,}
+\DoxyCodeLine{00017\ \ \ \ \ Tilemap,}
+\DoxyCodeLine{00018\ \ \ \ \ Floor,}
+\DoxyCodeLine{00019\ \ \ \ \ Wall,}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{classDoor}{Door}},}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{classPlayer}{Player}},}
+\DoxyCodeLine{00022\ \ \ \ \ Melee,}
+\DoxyCodeLine{00023\ \ \ \ \ Ranged,}
+\DoxyCodeLine{00024\ \ \ \ \ Boss,}
+\DoxyCodeLine{00025\ \ \ \ \ Watergun,}
+\DoxyCodeLine{00026\ \ \ \ \ Supersoaker,}
+\DoxyCodeLine{00027\ \ \ \ \ Powerwasher,}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{classProjectile}{Projectile}},}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{classHeart}{Heart}},}
+\DoxyCodeLine{00030\ \ \ \};}
+\DoxyCodeLine{00031\ \ \ }
+\DoxyCodeLine{00032\ \ \ \textcolor{keyword}{static}\ sf::Sprite\ getSpriteWithName(Texture\_Name\ name);}
+\DoxyCodeLine{00033\ \ \ \textcolor{keyword}{static}\ sf::Vector2u\ getSize(std::string\ name);}
+\DoxyCodeLine{00034\ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ LoadAssets();}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00037\ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ std::map<Texture\_Name,\ sf::Texture>\ textures;}
+\DoxyCodeLine{00038\ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ std::vector<Texture\_Name>\ \textcolor{keyword}{const}\ tilemap\_textures\ =}
+\DoxyCodeLine{00039\ \ \ \{}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ Texture\_Name::Floor,}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ Texture\_Name::Wall,}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ Texture\_Name::Door}
+\DoxyCodeLine{00043\ \ \ \};}
+\DoxyCodeLine{00044\ \};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{keyword}{typedef}\ ResourceManager::Texture\_Name\ Tex;}
+
+\end{DoxyCode}

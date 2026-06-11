@@ -1,0 +1,25 @@
+\doxysection{Level.\+h}
+\hypertarget{Level_8h_source}{}\label{Level_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}Room.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Player.h"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classLevel}{Level}}\{}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ \ \ \ \ \mbox{\hyperlink{classLevel}{Level}}(\mbox{\hyperlink{classPlayer}{Player}}*\ player);}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{classLevel}{\string~Level}}();}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{classRoom}{Room}}*\ \mbox{\hyperlink{classLevel_aea8fb467940cbb003ce1463222342734}{currentRoom}};\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLevel_a745ae81661f4c51a767d341870f50fa3}{GoTo}}(\mbox{\hyperlink{classDoor}{Door}}*\ entry,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00019\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{classPlayer}{Player}}*\ player;\ }
+\DoxyCodeLine{00021\ \ \ }
+\DoxyCodeLine{00022\ \ \ \ \ std::map<int,\ Room*>\ RoomList\ \{\};\ }
+\DoxyCodeLine{00023\ \ \ }
+\DoxyCodeLine{00024\ \};}
+
+\end{DoxyCode}

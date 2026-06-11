@@ -1,0 +1,58 @@
+\doxysection{Entity.\+h}
+\hypertarget{Entity_8h_source}{}\label{Entity_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}Object.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/Sprite.hpp>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <SFML/System/Vector2.hpp>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classProjectile}{Projectile}};}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classWeapon}{Weapon}};}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classEntity}{Entity}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classObject}{Object}}}
+\DoxyCodeLine{00012\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \ \ }
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{classEntity}{Entity}}(sf::Vector2f\ \mbox{\hyperlink{classObject_aec00daf54d15f689af2eea0be28dbf86}{pos}},\ sf::Sprite\ \mbox{\hyperlink{classObject_a65be09abc56e93e0154c3a0e37f97579}{sprite}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classEntity_ae9d09aedb5646c7d29c5838a717a02dd}{max\_health}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classEntity_a12ea871d945d59cbf57b8f8f7d2179ed}{speed}},\ \mbox{\hyperlink{classWeapon}{Weapon}}*\ \mbox{\hyperlink{classEntity_adde301c773b951aa9630ebc8646d381b}{weapon}});}
+\DoxyCodeLine{00017\ \ \ \ \ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classEntity_adf6d3f7cb1b2ba029b6b048a395cc8ae}{\string~Entity}}();}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEntity_ac971afd66fb5ef906baea7a06d7a32d7}{move}}(sf::Vector2f\ playerpos)\ =\ 0;}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEntity_a737e435721056187a36147cd06653afc}{pushback}}();}
+\DoxyCodeLine{00029\ \ \ \ \ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEntity_a603572b9711bff6ceb00b04f84d4fbd3}{collide}}(\mbox{\hyperlink{classObject}{Object}}*\ other)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00032\ \ \ \ \ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEntity_a873f61ebe878480cd6892a272c12b6f2}{draw}}\ (sf::RenderTarget\ \&target,\ sf::RenderStates\ states)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEntity_a7dd138ecb5746373c1ac637c5643bb0a}{shoot}}(\textcolor{keywordtype}{float}\ angle);}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEntity_a532c15bc960ddd36e402aa7b80950157}{change\_hp}}(\textcolor{keywordtype}{int}\ diff);}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classEntity_aa88d74c59bcc49cae54f47a1fae9d807}{get\_hp}}();}
+\DoxyCodeLine{00045\ \ \ \ \ std::vector<Projectile*>\&\ \mbox{\hyperlink{classEntity_afffba731382c03503d86678eb6803013}{get\_projectiles}}();}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEntity_ab1c6d1c0cc234f5fc40e3d9791a6878b}{remove\_projectile}}(\mbox{\hyperlink{classProjectile}{Projectile}}*\ p);}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEntity_a27393e0ec0291637bde9f5ad5f94f44f}{goto\_old\_pos}}();}
+\DoxyCodeLine{00050\ \ \ \ \ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classEntity_aa7ed90c2614fa44d37c0233d12816080}{isDead}};\ }
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{classWeapon}{Weapon}}*\ \mbox{\hyperlink{classEntity_adde301c773b951aa9630ebc8646d381b}{weapon}};\ }
+\DoxyCodeLine{00053\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classEntity_a455fd1bd74d5d5f5c4325607b71cc91f}{isPushed}};\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classEntity_ab2047c7cc0414f54fb2492deac18d11c}{hp}};\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classEntity_ae9d09aedb5646c7d29c5838a717a02dd}{max\_health}};\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classEntity_a12ea871d945d59cbf57b8f8f7d2179ed}{speed}};\ }
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ std::vector<Projectile*>\ \mbox{\hyperlink{classEntity_a0f33d3deac9d3af44d20b690e725ec78}{projectiles}};\ }
+\DoxyCodeLine{00060\ \ \ \ \ sf::Vector2f\ \mbox{\hyperlink{classEntity_a5a69f0286004306ae5cc4e6edfd274d8}{old\_pos}};\ }
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{comment}{//varibles\ for\ lerping\ when\ getting\ pushed}}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classEntity_a80c920b6d6f0b7320451fe4e8cf19298}{time}};\ }
+\DoxyCodeLine{00064\ \ \ \ \ sf::Vector2f\ \mbox{\hyperlink{classEntity_a25869c1b5302573f1fc02159ba3dad2a}{targetPos}};\ }
+\DoxyCodeLine{00065\ \};}
+\DoxyCodeLine{00066\ }
+
+\end{DoxyCode}
